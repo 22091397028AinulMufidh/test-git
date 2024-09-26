@@ -1,0 +1,233 @@
+/* Mengimpor font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Pengaturan dasar CSS */
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+/* Gaya untuk wadah utama "contact" */
+.contact {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #192a56;
+  padding: .5rem;
+}
+
+
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+section:nth-child(even){
+  background: #fff;
+}
+/* Gaya untuk wadah konten */
+.content-contact {
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  overflow: auto;
+  max-width: 800px;
+}
+
+/* Gaya untuk judul "contact" */
+.contact h2 {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: 800;
+  color: #192a56;
+  margin-bottom: 10px;
+}
+
+/* Gaya untuk teks dalam konten */
+.contact p {
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk kontainer informasi kontak */
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  flex-wrap: wrap; /* Mengatur wrapping pada tampilan yang lebih kecil */
+  max-width: 800px;
+  text-align: left;
+}
+.contactInfo h3{
+  font-size: 30px;
+  font-weight: bold;
+}
+/* .contactInfo p{
+  font-size: 14px;
+} */
+.contact .box .email{
+  text-transform: lowercase;
+}
+
+/* Gaya untuk setiap kotak informasi */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk ikon dalam kotak informasi */
+.icon {
+  width: 50px;
+  height: 50px;
+  background: #ffa500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+}
+.icon:hover{
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #ffa500;
+  border: 2.5px solid #ffa500;
+}
+/* Gaya untuk teks dalam kotak informasi */
+.text {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Gaya untuk judul dalam kotak informasi */
+.text h3 {
+  font-weight: 300;
+  color: c02311;
+}
+
+/* Gaya untuk formulir kontak */
+.contactForm {
+  background: #ffa500;
+  color: #fff;
+  padding: 70px;
+  border-radius: 20px;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Gaya untuk judul dalam formulir kontak */
+.contactForm h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.contactInfo box {
+  margin-top: 30px;
+}
+
+/* Gaya untuk kotak masukan dalam formulir kontak */
+.inputBox {
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Gaya untuk input dan textarea dalam kotak masukan */
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  resize: none;
+  color: #fff;
+  background: transparent;
+}
+
+/* Gaya untuk label animasi dalam kotak masukan */
+.inputBox label {
+  position: absolute;
+  left: 0;
+  padding: 5px;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #fff;
+}
+
+/* Gaya untuk label animasi ketika input fokus atau valid */
+.inputBox input:focus + label,
+.inputBox input:valid + label,
+.inputBox textarea:focus + label,
+.inputBox textarea:valid + label {
+  color: #e91e63;
+  font-size: 14px;
+  transform: translateY(-20px);
+}
+
+/* Gaya untuk tombol "Submit" dalam formulir kontak */
+.inputBox input[type="submit"] {
+  width: 100px;
+  background: rgb(253, 187, 64);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 18px;
+}
+
+/* Media query untuk layar berukuran lebih kecil */
+@media (max-width: 991px) {
+  .contact {
+    flex-direction: column;
+  }
+  .content, .contactForm {
+    padding: 20px;
+    text-align: center;
+  }
+  .contactInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+#lisensi-contact {
+  font-size: 12px;
+  margin-top: -150px;
+  margin-right: 200px;
+  text-decoration: none;
+  float: right;
+  color: white;
+}
